@@ -92,44 +92,7 @@ img {
   max-width: 3.2rem;
 }
 
-/* Navbar */
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.1em solid var(--border);
-  width: 100vw;
-  height: 7rem;
-}
-
-.nav-icon {
-  width: 10rem;
-  object-fit: cover;
-  margin-left: 3rem;
-}
-
-.lista-nav {
-  background-color: inherit;
-  display: flex;
-  margin-right: 3rem;
-}
-
-.lista-link {
-  color: var(--textoNav);
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  padding: 2em;
-  color: #74a57f;
-}
-
-.lista-link:hover {
-  color: var(--oscuro2);
-}
 
 /* 
 --------------------- Index ------------------------
@@ -261,47 +224,6 @@ li {
   }
 }
 
-/* ---------------------- footer --------------------------- */
-
-footer {
-  height: fit-content;
-  border-top: 0.1em solid var(--border);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer-principal {
-  display: flex;
-  flex-direction: row;
-  min-height: 8rem;
-}
-
-.footer-col {
-  flex: 1;
-  padding: 0 10px;
-  text-align: center;
-  height: 5rem;
-  padding-top: 2rem;
-}
-
-footer p {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.footer-h {
-  margin-bottom: 0.5rem;
-}
-
-footer-ic {
-  hover:
-}
-
-.copyright {
-  background-color: var(--oscuro2);
-}
 
 /* 
   ---------------------------ACERCA-------------------------  
@@ -493,27 +415,6 @@ Responsivo 480px
     padding: 2em 2em;
   }
 
-
-  /* Navbar */
-  nav {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-icon {
-    margin: 1rem 0;
-  }
-
-  .lista-nav {
-    margin: 1rem 0;
-    flex-direction: column;
-  }
-
-  li {
-    padding: 0.5em;
-  }
-
   /* Article */
   .article-text {
     flex-basis: 100%;
@@ -540,16 +441,6 @@ Responsivo 480px
   .columna-productos {
     flex-basis: 100%;
     margin: 0;
-  }
-
-  /* footer */
-  .footer-principal {
-    flex-direction: column;
-  }
-
-  .footer-col {
-    padding: 0;
-    margin-bottom: 1rem;
   }
 
   /* ACERCA */

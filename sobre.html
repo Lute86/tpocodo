@@ -8,27 +8,16 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/80d2561708.js" crossorigin="anonymous"></script>
+  <script src="menu.js" defer></script>
+  <script src="footer.js" defer></script>
   <title>MarianaNails</title>
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="seccion-oscura">
-    <!--Icono-->
-    <a href="#"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
-    <!--Links-->
-    <ul class="lista-nav">
-      <li><a class="lista-link" href="./index.html">
-          <i class="fa-solid fa-house"></i>
-          Principal</a></li>
-      <li><a class="lista-link" href="./sobre.html">
-          Acerca de mí</a></li>
-      <li><a class="lista-link" href="./servicios.html">Servicios</a></li>
-      <li><a class="lista-link" href="./contacto.html">
-          <i class="fa-solid fa-envelope"></i>
-          Contacto</a></li>
-    </ul>
-  </nav>
+
+  <menu-component></menu-component>
+
 
   <!-- Principal -->
   <section class="seccion-clara acerca-section">
@@ -87,30 +76,8 @@
   </section>
 
   <!-- Footer -->
-  <footer class="seccion-oscura">
-    <!-- Divisor -->
-    <div class="footer-principal" id="footer">
-      <div class="footer-col">
-        <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-h">Seguinos</h4>
-        <a href="https://instagram.com/mariana_sole_olmedo/" target="_blank"><img class="iconos" src="./imagenes/igIcon.png"
-            alt="icono"></a>
-        <a href="https://facebook.com/mariana.olmedo.589" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png"
-            alt="icono"></a>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-h">Horario</h4>
-        <p>Lunes a Sabado: 9h00 a 18h00</p>
-        <p>Domingos y feriados: cerrado</p>
-      </div>
-    </div>
-    <!-- Copyright -->
-    <div id="footer-copyright" class="copyright">
-      <p>Copyright 2023</p>
-    </div>
-  </footer>
+
+  <footer-component></footer-component>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
     integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
