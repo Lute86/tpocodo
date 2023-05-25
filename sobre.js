@@ -9,7 +9,7 @@ const testimonios = [
   "¡Increíble servicio de uñas! El personal es amable y atento. Siempre me siento bienvenida y cuidada. Sus productos de alta calidad y técnicas expertas hacen maravillas en mis uñas. ¡Totalmente recomendado!",
   "¡Este salón de uñas es una joya! Las técnicas son hábiles y perfeccionistas. Siempre se toman el tiempo para hacer un trabajo impecable. ¡Me encanta la variedad de opciones y diseños que ofrecen!",
   "Este salón de uñas es increíble. El ambiente es único. Las técnicas me dan resultados asombrosos. ¡Hasta la próxima!",
-] 
+]
 
 // Genera valores aleatorios para las variables
 let ran1 = Math.floor(Math.random() * 9);
@@ -52,3 +52,18 @@ function staff(img, name, test, ran) {
 staff('t-1-i', 't-1-n', "t-1-t", ran1);
 staff('t-2-i', 't-2-n', "t-2-t", ran2);
 staff('t-3-i', 't-3-n', "t-3-t", ran3);
+
+
+//animación texto
+window.addEventListener('scroll', function () {
+  let testimonios = this.document.getElementById('testimonios');
+  let posiciontestimonios = testimonios.getBoundingClientRect().top;
+  console.log(posiciontestimonios);
+  let tamañoDePantalla = window.innerHeight;
+  if (posiciontestimonios < tamañoDePantalla) {
+    testimonios.style.animation = 'animacion1 2s ease'
+  }
+
+
+
+})
