@@ -319,6 +319,7 @@ footer-ic {
  */
 /* Formulario */
 .formulario {
+  text-align: left;
   width: 35rem;
   padding: 2rem;
   border: 1px solid var(--border);
