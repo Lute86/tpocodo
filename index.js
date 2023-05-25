@@ -32,9 +32,10 @@ window.addEventListener('scroll', function () {
     }
 
     let productos = this.document.getElementById('productos');
+    let anchoDePantalla = window.innerWidth;
     let posicionproductos = productos.getBoundingClientRect().top;
     console.log(posicionproductos);
-    if (posicionproductos < tamañoDePantalla) {
+    if ((posicionproductos < tamañoDePantalla) && (anchoDePantalla < 481)) {
         productos.style.animation = 'animacion2 3s ease'
     }
 })
