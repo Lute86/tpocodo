@@ -82,4 +82,11 @@ window.addEventListener('scroll', function () {
     pies.style.animation = 'animacion1 2s ease'
   }
 
+  let pestanias = this.document.getElementById('pestanias');
+  let posicionpestanias = pestanias.getBoundingClientRect().top;
+  console.log(posicionpestanias);
+  if (posicionpestanias < tamañoDePantalla) {
+    pestanias.style.animation = 'animacion1 2s ease'
+  }
+
 })
