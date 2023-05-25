@@ -7,12 +7,12 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
   <title>Nails</title>
-</head>
+</head> 
 <body>
   <!-- Navbar -->
   <nav class="seccion-oscura">
     <!--Icono-->
-    <a href="#" target="_blank"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
+    <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
     <!--Links-->
     <ul class="lista-nav">
       <li><a class="lista-link" href="./index.html">Principal</a></li>
@@ -23,22 +23,90 @@
   </nav>
 
   <!-- Lista servicios --> 
-  <section class="seccion-clara">
+  <section class="seccion-clara serv-section">
 
-    <h2>Servicios</h2>
-    <hr>
+    <h2 class="texto-nav servicios-h">Servicios</h2>
+    <hr class="bg-oscuro" style="margin-bottom: 4rem;">
+    <!-- Manicura -->
+    <h3 style="margin-bottom: 2rem;">Manos</h3>
+    <div class="servicios servicios-section">
+      <div class="servicios-col">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manicura</td>
+                <td>$2500</td>
+              </tr>
+              <tr>
+                <td>Remoción de gel</td>
+                <td>$1000</td>
+              </tr>
+              <tr>
+                <td>Uñas acrílico</td>
+                <td>$4500</td>
+              </tr>
+              <tr>
+                <td>Uñas gel</td>
+                <td>$4000</td>
+              </tr>
+              <tr>
+                <td>Nail Art</td>
+                <td>$1000+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="servicios-col">
+        <img class="manicura-img" src="./imagenes/manoverde.png" alt="mano">
+      </div>
+    </div>
+    <!-- Pedicura -->
+    <h3 style="margin-bottom: 2rem;margin-top: 5rem;">Pies</h3>
     <div class="servicios">
-      <div class="columna-servicios">
-        <h3>Columna 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac quam eu enim dictum tincidunt eu et tortor.</p>
+      <div class="servicios-col">
+        <img class="manicura-img" src="./imagenes/pedicura.png" alt="pies">
       </div>
-      <div class="columna-servicios">
-        <h3>Columna 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac quam eu enim dictum tincidunt eu et tortor.</p>
-      </div>
-      <div class="columna-servicios">
-        <h3>Columna 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac quam eu enim dictum tincidunt eu et tortor.</p>
+      <div class="servicios-col">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pedicura</td>
+                <td>$3500</td>
+              </tr>
+              <tr>
+                <td>Remoción de gel</td>
+                <td>$1000</td>
+              </tr>
+              <tr>
+                <td>Pedicura + gel</td>
+                <td>$5500</td>
+              </tr>
+              <tr>
+                <td>Pedicura + mascarilla</td>
+                <td>$6000</td>
+              </tr>
+              <tr>
+                <td>Nail Art</td>
+                <td>$1000+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -47,14 +115,14 @@
 
   <!--Galeria-->
   <section class="seccion-clara">
-    <h2>Galeria</h2>
-    <hr>
+    <h2 class="texto-nav">Galeria</h2>
+    <hr class="bg-oscuro">
     <div class="gallery">
-      <div class="gallery-row"></div>
-      <div class="gallery-row"></div>
-      <div class="gallery-row"></div>
+      <div class="gallery-row col-gal"></div>
+      <div class="gallery-row col-gal"></div>
+      <div class="gallery-row col-gal"></div>
     </div>
-    <button class="load-more-btn">Load More</button>
+    <button class="btn">Más</button>
     
     <div class="modal">
       <div class="modal-content">
@@ -69,12 +137,12 @@
     <!-- Divisor -->
     <div class="footer-principal" id="footer">
       <div class="footer-col">
-          <a href="#" target="_blank"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
+          <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
       </div>
       <div class="footer-col">
         <h4 class="footer-h">Seguinos</h4>
-        <a href="#" target="_blank"><img class="iconos" src="./imagenes/igIcon.png" alt="icono"></a>
-        <a href="#" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png" alt="icono"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="iconos" src="./imagenes/igIcon.png" alt="icono"></a>
+        <a href="https://www.facebook.com" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png" alt="icono"></a>
       </div>
       <div class="footer-col">
         <h4 class="footer-h">Horario</h4>
@@ -84,7 +152,7 @@
     </div>
     <!-- Copyright -->
     <div id="footer-copyright" class="copyright">
-      <p>Copyright xxx</p>
+      <p>Copyright 2023</p>
     </div>
   </footer>
   

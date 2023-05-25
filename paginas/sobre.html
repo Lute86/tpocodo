@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <title>Nails</title>
 </head>
-<body>
+<body> 
   <!-- Navbar -->
   <nav class="seccion-oscura">
     <!--Icono-->
-    <a href="#" target="_blank"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
+    <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
     <!--Links-->
     <ul class="lista-nav">
       <li><a class="lista-link" href="./index.html">Principal</a></li>
@@ -23,14 +23,14 @@
   </nav>
 
   <!-- Principal --> 
-  <section class="seccion-clara">
-    <h2 style="color:rgb(113, 38, 123)">Sobre nosotros</h2>
-    <hr style="background-color: rgb(242, 132, 246)">
+  <section class="seccion-clara acerca-section">
+    <h2 class="texto-nav">Acerca de mí</h2>
+    <hr class="bg-oscuro">
     <p>
       Bienvenidos a mi salón de uñas, donde el cuidado de tus manos y pies es mi pasión y mi prioridad. Como propietaria y esteticista, soy amante de la estética y el buen gusto, y me enorgullece ofrecer servicios de uñas de alta calidad en un ambiente relajado y acogedor.
     </p>
     <br><br>
-    <p style="color:rgb(113, 38, 123)">
+    <p class="texto-nav">
       Ofrezco una amplia gama de servicios de uñas, desde manicuras y pedicuras básicas hasta diseños personalizados y aplicaciones de uñas de gel y acrílicas. Utilizo solo productos de la más alta calidad y técnicas innovadoras para asegurarme de que tus uñas luzcan hermosas y saludables en todo momento  
     </p>
     <br><br>
@@ -38,9 +38,33 @@
       Para mí, la atención al cliente personalizada es fundamental. Me aseguro de que cada visita sea única y satisfactoria, y trabajo para superar tus expectativas en cada detalle. Me esfuerzo por conocer a mis clientes y sus preferencias para poder brindarles un servicio personalizado y adaptado a sus necesidades.
     </p>
     <br><br>
-    <p style="color:rgb(113, 38, 123)">
+    <p class="texto-nav">
       Cuidate como mereces. ¡Espero verte pronto y tener la oportunidad de ofrecerte una experiencia de cuidado de uñas excepcional!  
     </p>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="seccion-clara testimonios-section">
+
+    <h2 class="texto-nav ">Testimonios</h2>
+    <hr class="bg-oscuro testimonios-hr">
+    <div class="servicios columnas-testimonios">
+      <div class="columna-servicios">
+        <img id="t-1-i" class="servicios-img" src="./imagenes/blank-profile.png" alt="manicura">
+        <h3 id="t-1-n" class="texto-nav">Rebeca</h3>
+        <p id="t-1-t">"El personal es amable y profesional. Siempre me hacen sentir bienvenida. Sus servicios son excelentes y siempre salgo con uñas hermosas y bien cuidadas. ¡Definitivamente volveré!"</p>
+      </div>
+      <div class="columna-servicios">
+        <img id="t-2-i" class="servicios-img" src="./imagenes/blank-profile.png" alt="pedicura">
+        <h3 id="t-2-n">Laura</h3>
+        <p id="t-2-t" class="texto-nav">"Las técnicas son expertas y hacen un trabajo impecable. El ambiente es relajante y acogedor. Siempre me siento mimada y consentida cada vez que voy. ¡El mejor salón de uñas en la ciudad!"</p>
+      </div>
+      <div class="columna-servicios">
+        <img id="t-3-i" class="servicios-img" src="./imagenes/blank-profile.png" alt="uñas">
+        <h3 id="t-3-n" class="texto-nav">Victoria</h3>
+        <p id="t-3-t">"Un lugar escondido con profesionales talentosos y creativos. Diseños únicos y de moda. Productos de alta calidad y duraderos. Mi nuevo lugar favorito para consentir mis manos y pies."</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -48,12 +72,12 @@
     <!-- Divisor -->
     <div class="footer-principal" id="footer">
       <div class="footer-col">
-          <a href="#" target="_blank"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
+          <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
       </div>
       <div class="footer-col">
         <h4 class="footer-h">Seguinos</h4>
-        <a href="#" target="_blank"><img class="iconos" src="./imagenes/igIcon.png" alt="icono"></a>
-        <a href="#" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png" alt="icono"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="iconos" src="./imagenes/igIcon.png" alt="icono"></a>
+        <a href="https://www.facebook.com" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png" alt="icono"></a>
       </div>
       <div class="footer-col">
         <h4 class="footer-h">Horario</h4>
@@ -63,11 +87,11 @@
     </div>
     <!-- Copyright -->
     <div id="footer-copyright" class="copyright">
-      <p>Copyright xxx</p>
+      <p>Copyright 2023</p>
     </div>
   </footer>
   
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./sobre.js"></script>
 </body>
 </html>

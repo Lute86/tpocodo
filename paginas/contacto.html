@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
-  <title>Nails</title>
+  <title>Nails</title> 
 </head>
-<body>
+<body  onload="setMinDate()">
   <!-- Navbar -->
   <nav class="seccion-oscura">
     <!--Icono-->
-    <a href="#" target="_blank"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
+    <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
     <!--Links-->
     <ul class="lista-nav">
       <li><a class="lista-link" href="./index.html">Principal</a></li>
@@ -23,29 +23,54 @@
   </nav>
 
   <!-- Principal --> 
-  <section class="seccion-clara">
-    <h2>Contactame</h2>
-    <form action="" method="post">
-      <fieldset>
-        <legend>Datos</legend>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" size="20">
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" size="20">
-        <br><br>
-        <label for="asunto">Asunto:</label>
-        <input type="text" name="asunto" id="asunto" size="20">
-        <br><br>
-      </fieldset>
-      <br>
-      <label for="consulta">Escriba su consulta</label>
-      <br>
-      <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba su consulta..."></textarea>
-      <br>
-      <input type="submit" name="" id="" value="Enviar">
-    </form>
-    
+  <section class="seccion-clara contacto-section">
+    <h2 class="texto-nav">Dejanos tu consulta!</h2>
+    <hr class="bg-oscuro">
+    <!-- Formulario -->
+    <div class="formulario">
+      <form name="fvalida">
+          <label>Nombre Completo: 
+            <input type="text" name="nombre">
+          </label>
+          <br><br>
+          <label>Edad:
+            <input type="text" name="edad" size="3" maxlength="2">
+          </label>
+          <br><br>
+          <label>Email:
+            <input type="email" name="email">
+          </label>
+          <br><br>
+          <label>Interés:
+            <select name=interes>
+                <option value="Elegir">Elegir
+                <option value="Comercial">Manicura
+                <option value="Clientes">Pedicura
+                <option value="Proveedores">Otro
+            </select>
+          </label>
+          <br><br>
+          <label>
+            Seleccionar fecha:
+            <input type="date" name="fecha" id="fecha" min="" max="2023-12-31"> 
+          </label>
+          <br><br>
+          <label>Turno:
+            <input type="radio" name="turno" value="Manana"> 9h00 - 12h00 
+            <input type="radio" name="turno" value="Tarde"> 12h00 - 16h00
+            <input type="radio" name="turno" value="Noche"> 16h00 - 18h00 
+          </label>
+          <br><br>
+          <label>
+            <textarea name="razon" cols="40" rows="5" placeholder="Texto (opcional)"></textarea>
+          </label>
+          <br><br>
+          <div class="centrado">
+              <!-- Al presionar el botón, se llama a la función de validacion -->
+              <input type="button" class="b1" value="Enviar" onclick="validarEnviar()">
+          </div>
+      </form>
+    </div>
   </section>
 
   
@@ -55,12 +80,12 @@
     <!-- Divisor -->
     <div class="footer-principal" id="footer">
       <div class="footer-col">
-          <a href="#" target="_blank"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
+          <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="logo"></a>
       </div>
       <div class="footer-col">
         <h4 class="footer-h">Seguinos</h4>
-        <a href="#" target="_blank"><img class="iconos" src="./imagenes/igIcon.png" alt="icono"></a>
-        <a href="#" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png" alt="icono"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="iconos" src="./imagenes/igIcon.png" alt="icono"></a>
+        <a href="https://www.facebook.com" target="_blank"><img class="iconos" src="./imagenes/fbBlack.png" alt="icono"></a>
       </div>
       <div class="footer-col">
         <h4 class="footer-h">Horario</h4>
@@ -70,9 +95,10 @@
     </div>
     <!-- Copyright -->
     <div id="footer-copyright" class="copyright">
-      <p>Copyright xxx</p>
+      <p>Copyright 2023</p>
     </div>
   </footer>
   
+  <script src="contacto.js"></script>
 </body>
 </html>
