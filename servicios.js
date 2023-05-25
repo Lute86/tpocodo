@@ -10,7 +10,7 @@ let images = [
   './imagenes/pink.png',
   './imagenes/pink2.png',
   './imagenes/manofrascos.png',
-  './imagenes/pestanias.png',
+  './imagenes/pestanias.jpg',
   './imagenes/unas.png',
   './imagenes/design.png',
 ];
