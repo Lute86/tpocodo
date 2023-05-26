@@ -30,6 +30,7 @@ templateNavBar.innerHTML = `
         <style>
         .seccion-oscura {
             background-color: var(--oscuro);
+            font-family: sans-serif;
           }
 
         #checkbox, #bar, #xmark  {
@@ -50,6 +51,7 @@ templateNavBar.innerHTML = `
           .icon {
             width: 1.2rem;
             margin-left: 1.5rem;
+            color: var(--textoNav);
           }
           
           .lista-nav {
@@ -61,19 +63,23 @@ templateNavBar.innerHTML = `
           .lista-link {
             color: var(--textoNav);
           }
+  
           
           li {
             display: inline;
-            list-style-type: none;
+            list-style: none;
             padding: 2em;
             color: #74a57f;
           }
+          li a {
+            text-decoration: none;
+          }
           
           .lista-link:hover {
-            color: var(--oscuro2);
+            color: black;
           }
 
-          @media only screen and (max-width: 1110px) {
+          @media only screen and (max-width: 1130px) {
          
             /* Navbar */
 
@@ -151,7 +157,7 @@ templateNavBar.innerHTML = `
 
             .lista-nav li a {
                text-decoration: none;
-               color: inherit;
+               color: var(--textoNav);
                display: block;
                padding: 1.2em 0rem;
                margin: 0;
