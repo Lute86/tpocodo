@@ -73,7 +73,7 @@ templateNavBar.innerHTML = `
             color: var(--oscuro2);
           }
 
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 1110px) {
          
             /* Navbar */
 
