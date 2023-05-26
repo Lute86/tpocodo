@@ -2,7 +2,7 @@ const templateNavBar = document.createElement('div');
 templateNavBar.innerHTML = `
         <nav class="seccion-oscura" >
                 <!--Icono-->
-                <a href="#"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
+                <a href="./index.html"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
 
                 <!--Links-->
                 
