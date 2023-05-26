@@ -3,21 +3,28 @@ templateNavBar.innerHTML = `
         <nav class="seccion-oscura" >
                 <!--Icono-->
                 <a href="#"><img class="nav-icon" src="./imagenes/logo.png" alt="icono"></a>
+
                 <!--Links-->
+                
+                <input id="checkbox" type="checkbox">
+                <img id="bar" src="./imagenes/bars.svg" />
+                <img id="xmark" src="./imagenes/xmark.svg" />
+               
                     <ul class="lista-nav">
                         <li><a class="lista-link" href="./index.html">
-                            <i class="fa-solid fa-house"></i>
+                        <img class="icon" src="./imagenes/house.svg" />
                             Principal</a></li>
                         <li><a class="lista-link" href="./sobre.html">
-                            <i class="fa-solid fa-circle-info"></i>
+                        <img class="icon" src="./imagenes/circle-info.svg" />
                             Acerca de mí</a></li>
                         <li><a class="lista-link" href="./servicios.html">
-                            <i class="fa-solid fa-hand-holding-hand"></i>
+                        <img class="icon" src="./imagenes/handshake.svg" />
                             Servicios</a></li>
                         <li><a class="lista-link" href="./contacto.html">
-                            <i class="fa-solid fa-envelope"></i>
+                        <img class="icon" src="./imagenes/envelope.svg" />
                             Contacto</a></li>
                     </ul>
+             
         </nav>
         
         <style>
@@ -25,6 +32,9 @@ templateNavBar.innerHTML = `
             background-color: var(--oscuro);
           }
 
+        #checkbox, #bar, #xmark  {
+            display: none;
+        }
         nav {
             display: flex;
             flex-direction: row;
@@ -34,11 +44,12 @@ templateNavBar.innerHTML = `
             width: 100vw;
             height: 7rem;
           }
+
+        
           
-          .nav-icon {
-            width: 10rem;
-            object-fit: cover;
-            margin-left: 3rem;
+          .icon {
+            width: 1.2rem;
+            margin-left: 1.5rem;
           }
           
           .lista-nav {
@@ -62,27 +73,100 @@ templateNavBar.innerHTML = `
             color: var(--oscuro2);
           }
 
-          @media only screen and (max-width: 480px) {
+          @media only screen and (max-width: 768px) {
          
             /* Navbar */
-            nav {
-              height: auto;
-              flex-direction: column;
-              align-items: flex-start;
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
+
+           
+
+            nav {
+                font-family: sans-serif;
+                background-color: var(--oscuro);
+                height: auto;
+                flex-direction: column;
+                align-items: flex-start;
+                // padding: 10px 12px;
+                position: relative;
+            }
+
+            #checkbox, #bar, #xmark {
+                display: flex;
+                width: 2rem;
+                height:2rem;
+                position: absolute;
+                top: 10px;
+                left: 12px;
+                cursor: pointer;
+              }
+
+              #bar, #xmark {
+                pointer-events: none;
+                font-size:2rem;
+              }
+
+              #checkbox {
+                opacity: 0;
+              }
+
+              #xmark {
+                display: none;
+              }
+
+              #checkbox:checked ~ #bar {
+                display:none;
+              }
+
+              #checkbox:checked ~ #xmark {
+                display:flex;
+              }
           
             .nav-icon {
-              margin: 1rem 0;
+              margin: 0 4rem;
+              height:4rem;
             }
           
             .lista-nav {
-              margin: 1rem 0;
+              width:100%;
+              display: block;
               flex-direction: column;
+              position: absolute;
+              top: -10.2rem;
+              z-index:-1;
+              justify-content: start;
+              align-items: start;
+              transition:300ms;
             }
           
-            li {
-              padding: 0.5em;
+            .lista-nav li {
+                list-style: none;
+                margin:0;
+                padding:0;
             }
+
+            .lista-nav li a {
+               text-decoration: none;
+               color: inherit;
+               display: block;
+               padding: 1.2em 0rem;
+               margin: 0;
+            }
+
+            .lista-nav li a:hover {
+                color: black;
+            }
+
+            #checkbox:checked ~ .lista-nav {
+                top:4rem;
+                z-index:1;
+              }
+
+
           }
 
         </style>
