@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   color: var(--texto);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 section {
